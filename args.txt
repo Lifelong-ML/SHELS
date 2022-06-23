@@ -1,0 +1,21 @@
+{
+  "dataset1": "fminst",
+  "dataset2": "cifar10",
+  "experiment": "ood_detect",
+  "mutliple_dataset": true,
+  "ID_tasks": 5,
+  "total_tasks": 10,
+  "single_ood_class": false,
+  "batch_size": 32,
+  "lr": 0.0001,
+  "epochs": 1,
+  "epochs_g": 1,
+  "cosine_sim": true,
+  "sparsity": true,
+  "gating": true,
+  "train": true,
+  "load_chekpoint": false,
+  "cont_learner": false,
+  "random_seed": 2,
+  "save_path": "models/fashionMnist/tmp_model"
+}
