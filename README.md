@@ -24,7 +24,7 @@
     ### baseline
      python main.py --dataset1 mnist --ID_tasks 5 --total_tasks 10 --batch_size 32 --lr 0.0001 --epochs 10 --cosine_sim True --baseline True --train True --random_seed 5 --save_path ./dir_bl
 
-  #### evaluate
+   #### evaluation
        ### shels
         python main.py --dataset1 mnist --ID_tasks 5 --total_tasks 10 --batch_size 1 --lr 0.0001 --epochs 10 --cosine_sim True --sparsity_gs True --load_checkpoint True --random_seed 5 --save_path ./dir
 
