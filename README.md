@@ -17,7 +17,7 @@
 ## 3. Novelty detection 
    create directories to save the models and activations, example mkdir dir dir_bl
   ### MNIST (within-datatset)
-   #### train 
+  #### train 
     ### shels
      python main.py --dataset1 mnist --ID_tasks 5 --total_tasks 10 --batch_size 32 --lr 0.0001 --epochs 10 --cosine_sim True --sparsity_gs True --train True --random_seed 5 --save_path ./dir
 
@@ -25,11 +25,11 @@
      python main.py --dataset1 mnist --ID_tasks 5 --total_tasks 10 --batch_size 32 --lr 0.0001 --epochs 10 --cosine_sim True --baseline True --train True --random_seed 5 --save_path ./dir_bl
 
    #### evaluation
-       ### shels
-        python main.py --dataset1 mnist --ID_tasks 5 --total_tasks 10 --batch_size 1 --lr 0.0001 --epochs 10 --cosine_sim True --sparsity_gs True --load_checkpoint True --random_seed 5 --save_path ./dir
+     ### shels
+      python main.py --dataset1 mnist --ID_tasks 5 --total_tasks 10 --batch_size 1 --lr 0.0001 --epochs 10 --cosine_sim True --sparsity_gs True --load_checkpoint True --random_seed 5 --save_path ./dir
 
-       ### baseline
-        python main.py --dataset1 mnist --ID_tasks 5 --total_tasks 10 --batch_size 1 --lr 0.0001 --epochs 10 --cosine_sim True --baseline True --load_checkpoint True --random_seed 5 --save_path ./dir_bl --baseline_ood True
+     ### baseline
+      python main.py --dataset1 mnist --ID_tasks 5 --total_tasks 10 --batch_size 1 --lr 0.0001 --epochs 10 --cosine_sim True --baseline True --load_checkpoint True --random_seed 5 --save_path ./dir_bl --baseline_ood True
 
   To run experiments with different datasets, choose dataset1 argument from [mnist, fmnist, cifar10, svhn, gtsrb].
   
@@ -44,11 +44,11 @@
      python main.py --dataset1 mnist --dataset2 fmnist --multiple_dataset True --ID_tasks 10 --total_tasks 10 --batch_size 32 --lr 0.0001 --epochs 10 --cosine_sim True --baseline True --train True --save_path ./dir_bl
 
    ### evaluation
-     ### shels
-      python main.py --dataset1 mnist --dataset2 fmnist --multiple_dataset True --ID_tasks 10 --total_tasks 10 --batch_size 1 --lr 0.0001 --epochs 10 --cosine_sim True --sparsity_gs True --load_checkpoint True --save_path ./dir
+    ### shels
+     python main.py --dataset1 mnist --dataset2 fmnist --multiple_dataset True --ID_tasks 10 --total_tasks 10 --batch_size 1 --lr 0.0001 --epochs 10 --cosine_sim True --sparsity_gs True --load_checkpoint True --save_path ./dir
 
-     ### baseline
-      python main.py --dataset1 mnist --dataset2 fmnist --multiple_dataset True --ID_tasks 10 --total_tasks 10 --batch_size 1 --lr 0.0001 --epochs 10 --cosine_sim True --baseline True --load_checkpoint True --save_path ./dir_bl --baseline_ood True
+    ### baseline
+     python main.py --dataset1 mnist --dataset2 fmnist --multiple_dataset True --ID_tasks 10 --total_tasks 10 --batch_size 1 --lr 0.0001 --epochs 10 --cosine_sim True --baseline True --load_checkpoint True --save_path ./dir_bl --baseline_ood True
 
  To run experiments with different datasets, choose dataset1 and dataset2 from [mnist, fmnist, cifar10, svhn, gtsrb]
     
@@ -65,7 +65,6 @@
 
 
    #### detection and accommodation
- 
     python main.py --dataset1 mnist --ID_tasks 7 --total_tasks 10 --batch_size 1 --lr 0.0001 --epochs 10 --cosine_sim True --sparsity_gs True --load_checkpoint True --random_seed 5 --save_path ./dir 
 
 
