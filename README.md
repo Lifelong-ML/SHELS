@@ -70,4 +70,21 @@
 
   To run experiments with different datasets, choose dataset1 from [mnist, fmnist, cifar10, svhn, gtsrb]
   To load a preloaded set of experiments, use class_list_GTSRB.npz for GTSRB dataset and class_list1.npz for the other datasets by setting--load_list flag to True.
+  
+## Citing this work
+  If you use this work please cite our paper.
+      
+  
+ ``` 
+  @misc{https://doi.org/10.48550/arxiv.2206.13720,
+  doi = {10.48550/ARXIV.2206.13720}, 
+  url = {https://arxiv.org/abs/2206.13720},
+  author = {Gummadi, Meghna and Kent, David and Mendez, Jorge A. and Eaton, Eric},
+  keywords = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {SHELS: Exclusive Feature Sets for Novelty Detection and Continual Learning Without Class Boundaries},
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+```
 
