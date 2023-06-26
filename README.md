@@ -65,7 +65,7 @@
 
 
    #### detection and accommodation
-    python main.py --dataset1 mnist --ID_tasks 7 --total_tasks 10 --batch_size 1 --lr 0.0001 --epochs 10 --cosine_sim True --sparsity_gs True --load_checkpoint True --random_seed 5 --full_pipeline True --save_path ./dir 
+    python main.py --dataset1 mnist --ID_tasks 7 --total_tasks 10 --batch_size 1 --lr 0.0001 --epochs 10 --cosine_sim True --sparsity_gs True --load_checkpoint True --random_seed 5 --full_pipeline True --save_path ./dir --cont_learner True
 
 
   To run experiments with different datasets, choose dataset1 from [mnist, fmnist, cifar10, svhn, gtsrb]
